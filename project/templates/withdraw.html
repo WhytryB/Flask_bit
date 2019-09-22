@@ -1,0 +1,278 @@
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Robuxship</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/static/css/style_lk.css">
+		<link rel="stylesheet" href="/static/fonts/sourcesanspro.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+	<body id="home">
+
+		<div class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<a href="" class="navbar-brand"><img src="/static/images/2/logo.png"></a>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="dashboard">Dashboard</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="withdraw">Withdraw</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="dashboard">Dashboard</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="dashboard">Dashboard</a>
+						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">{{ current_user }}  <img src = "{{ img }}"  style="width: 45px; height: 45px; margin: 0 10px; border-radius: 100px;"><span class="caret"></span></a>
+							<div class="dropdown-menu" aria-labelledby="download">
+								<a class="dropdown-item" href="">test</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main container">
+			<div class="stats">
+				<div class="stat">
+					<div>
+						<img src="/static/images/2/1.png">
+					</div>
+					<div>
+						<span>B 20.7</span>
+						<label>day course</label>
+					</div>
+				</div>
+				<div class="stat">
+					<div>
+						<img src="/static/images/2/2.png">
+					</div>
+					<div>
+						<span>B 20.7</span>
+						<label>day course</label>
+					</div>
+				</div>
+				<div class="stat">
+					<div>
+						<img src="/static/images/2/3.png">
+					</div>
+					<div>
+						<span>B 20.7</span>
+						<label>day course</label>
+					</div>
+				</div>
+				<div class="stat">
+					<div>
+						<img src="/static/images/2/4.png">
+					</div>
+					<div>
+						<span>B 20.7</span>
+						<label>day course</label>
+					</div>
+				</div>
+			</div>
+			<div class="withdraw" style="">
+				<h3>Withdraw money</h3>
+				<div class="row justify-content-center">
+					<div class="col-lg-5">
+						<div class="card" style="box-shadow: 0px 0px 42px 0px rgba(0, 0, 0, 0.05);">
+							<div class="card-header">
+								<label style="margin-top: -15px;">Choose where<br>to transfer:</label>
+								<div class="withdraw-buttons">
+{#									<button onclick="go(1)" id="go_button_1">Paypal</button>#}
+									<button onclick="go(2)" id="go_button_2" >Bitcoin</button>
+								</div>
+								<div class="hr" style="margin-top: 0;"></div>
+							</div>
+							<div class="card-body row justify-content-center" style="text-align: center">
+{#                                    <div class="col-lg-10" id="go_1" style="display: none;">#}
+{#                                        <img src="/static/images/2/paypal.png" class="paypal-logo">#}
+{#                                        <span class="paypal-info">#}
+{#                                            <img src="/static/images/2/system-info.png">#}
+{#                                            <label>Well to a conclusion: <b>1537.23</b></label>#}
+{#                                        </span>#}
+{#                                        <div class="form-group form-group1">#}
+{#                                            <div class="input-group input-group1 mb-3">#}
+{#                                                <div class="input-group-prepend input-group-prepend1">#}
+{#                                                    <span class="input-group-text input-group-text1"><img id="calculator" src="/static/images/2/calculator.png"></span>#}
+{#                                                </div>#}
+{#                                                <input type="text" class="form-control form-control1" placeholder="E-Mail:">#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <div class="form-group form-group1">#}
+{#                                            <div class="input-group input-group1 mb-3">#}
+{#                                                <div class="input-group-prepend input-group-prepend1">#}
+{#                                                    <span class="input-group-text input-group-text1"><img id="bitcoin" src="/static/images/2/bitcoin.png"></span>#}
+{#                                                </div>#}
+{#                                                <input type="text" class="form-control form-control1" placeholder="Sum">#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                        <span class="paypal-info" style="margin-top: 30px;">#}
+{#                                            <img src="/static/images/2/money-info.png">#}
+{#                                            <label>Account balance: <b>1537.23</b></label>#}
+{#                                        </span>#}
+{#                                        <button class="btn btn-primary btn-sale" style="margin-top: 25px;">Withdraw</button>#}
+{#                                    </div>#}
+                                    <div class="col-lg-10" id="go_2" style="display: none;">
+                                        <img src="/static/images/bitcoin.png" class="paypal-logo">
+                                        <span class="paypal-info">
+                                            <img src="/static/images/2/system-info.png">
+                                            <label>Well to a conclusion: <b>0.00000001</b></label>
+                                        </span>
+                                     <form class="form-signin" role="form" method="post" action="">
+                                    {{ form.csrf_token }}
+                                        <div class="form-group form-group1">
+                                            <div class="input-group input-group1 mb-3">
+                                                <div class="input-group-prepend input-group-prepend1">
+                                                    <span class="input-group-text input-group-text1"><img id="calculator" src="/static/images/2/calculator.png"></span>
+                                                </div>
+
+                                              <input id="wallet"   class="form-control form-control1" name="wallet" placeholder="Wallet" required="" type="text" value="">
+                                        </div>
+                                          <span class="error">
+                                              {% if form.wallet.errors %}
+                                                {% for error in form.wallet.errors %}
+                                                  {{ error }}
+                                                {% endfor %}
+                                              {% endif %}
+                                        </span>
+                                        </div>
+                                        <div class="form-group form-group1">
+                                            <div class="input-group input-group1 mb-3">
+                                                <div class="input-group-prepend input-group-prepend1">
+                                                    <span class="input-group-text input-group-text1"><img id="bitcoin" src="/static/images/2/bitcoin.png"></span>
+                                                </div>
+                                                >
+                                              <input id="sum"   class="form-control form-control1" name="sum" placeholder="Sum" required="" type="text" value="">
+                                        </div>
+                                          <span class="error">
+                                              {% if form.sum.errors %}
+                                                {% for error in form.sum.errors %}
+                                                  {{ error }}
+                                                {% endfor %}
+                                              {% endif %}
+                                        </span>
+                                        </div>
+                                        <span class="paypal-info" style="margin-top: 30px;">
+                                            <img src="/static/images/2/money-info.png">
+                                            <label>Account balance: <b>{{ current_user.balance }}</b></label>
+                                        </span>
+                                        <button class="btn btn-primary btn-sale" style="margin-top: 25px;">Withdraw</button>
+                                     </form>
+                                    </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1"></div>
+					<div class="col-lg-5 history">
+						<div class="card" style="box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.09)">
+							<div class="card-header">
+								<label>Withdraw history</label>
+								<div class="withdraw-buttons">
+									<div class="dropdown show" style="margin-top: 5px;display: inline-block">
+										<a class="btn btn-link dropdown-toggle dropdown-toggle1" href="#" role="button" id="stats-group-a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-ellipsis-v" style="color: black;"></i>
+										</a>
+
+										<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+											<a class="dropdown-item" href="#">Action</a>
+											<a class="dropdown-item" href="#">Another action</a>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body row justify-content-center" style="padding: 0 !important;padding-left: 50px !important;text-align: left">
+								<div class="col-lg-11 scrolling" style="">
+                                     {% if wall %}
+                                            {% for i in wall %}
+                                                <div class="history-list">
+                                                {% if i.status == "Pending" %}
+                                                        <style>
+                                                        .history-list:nth-child({{ i.id }})>span::before {
+                                                            background: orange !important;
+                                                        }
+                                                        </style>
+                                                {% elif i.status == "Sent" %}
+                                                     <style>
+                                                        .history-list:nth-child({{ i.id }})>span::before {
+                                                            background: skyblue !important;
+                                                        }
+                                                        </style>
+                                               {% elif i.status == "Denied" %}
+                                                 <style>
+                                                    .history-list:nth-child({{ i.id }})>span::before {
+                                                        background: red !important;
+                                                    }
+                                                    </style>
+                                                {% endif %}
+                                                <span >{{ i.date.strftime('%d.%m.%Y') }}</span>
+                                                    <div>
+                                                        <div class="name">
+                                                            {{ current_user.login }}
+                                                        </div>
+                                                        <div class="desc">
+                                                            Withdraw {{ i.sum }} BTC
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                    {% else %}
+                                        <h4 class="text-center">No History</h4>
+                                    {% endif %}
+
+								</div><div style="width: 100%;padding: 10px 0"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>(c) Copyright 2019. Robuxship Co.</footer>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js"></script>
+		<script>
+            var old = 0;
+            go(2);
+            function go(index) {
+                $('[data-is="true"]').removeAttr('data-is').hide();
+                $('[data-is1="true"]').removeAttr('data-is1').removeAttr('class');
+                $("#go_" + index).show();
+                $("#go_button_" + index).attr('data-is1', 'true').attr('class', 'active');
+                    $("#go_" + index).attr('data-is', 'true');
+            }
+		$("input").focus(function() {
+			if (!$(this).is('.form-control1')) return false;
+			$(this).parent().css({
+				'border-bottom': '1px solid #00b1ff'
+			});
+			$(this).parent().find('.input-group-prepend1').find('span').find('img').attr('src', $(this).parent().find('.input-group-prepend1').find('span').find('img').attr('src').replace('.png', '1.png'));
+		});
+		$("input").focusout(function() {
+			if (!$(this).is('.form-control1')) return false;
+			$(this).parent().css({
+				'border-bottom': '1px solid #bebebe'
+			});
+			$(this).parent().find('.input-group-prepend1').find('span').find('img').attr('src', $(this).parent().find('.input-group-prepend1').find('span').find('img').attr('src').replace('1.png', '.png'));
+		});
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/js/all.js"></script>
+	</body>
+
+</html>
